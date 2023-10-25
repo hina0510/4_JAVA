@@ -1,0 +1,28 @@
+복합대입연산자 : +=, -=, *=, /=, %=
+
+논리연산자
+||(or) : 식 중에 하나라도 참이면 참
+true || false =>true
+
+&&(and) : 식 중에 모두 참이여야 참, 하나라도 거짓이면 거짓
+true && true => true
+true && false => false
+
+!(not) : 결과 반전
+!true => false
+!false => true
+
+if (조건식) {
+      참인 경우 실행
+}else if (조건식) {
+      종속문장
+}else{
+      if의 조건이 거짓인 경우 실행
+}
+
+
+
+
+
+
+

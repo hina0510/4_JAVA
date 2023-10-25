@@ -1,0 +1,35 @@
+예외처리
+ - 강제예외 : throw
+ - 예외전가 : throws
+ - 예외처리 : try, catch
+ - 프로그램에서 개발자 의도와 다르게 동작되는 것들을 처리하는 것
+ - 프로그램의 종료를 방지하는게 가장 중요한 역할이다
+
+class AAA{
+	
+}
+class BBB extends AAA{
+	
+}
+
+public static void main(String[] args) {
+	BBB b = new BBB();	=BBB라는 클래스에 AAA와 BBB의 정보가 있음. 그래서 자기 자신으로 받을 수 있고 부모로도 받을 수 있음
+	AAA a = new BBB();
+}
+
+Scanner input = new Scanner(System.in);
+s1 = input.next();		aaa bbb ccc 입력 시 공백 기준으로 앞의 값만 저장
+	s1에 "aaa"만 저장됨
+	변수를 나란히 next()로 받으면 하나에는 aaa 다음엔 bbb로 저장됨
+
+s2 = input.nextline();	aaa bbb ccc 입력 시 공백을 포함하여 입력값 저장
+	s2에 "aaa bbb ccc" 저장됨
+
+try{}에서 오류가 났을 때 오류와 관련된 catch 실행(세부 오류로 catch 설정 가능하지만 대분류인 Exception로 해결가능)
+	e.printStackTrace();		어떤 오류인지 출력
+finally{}는 무조건 실행됨
+
+throws Exception	예외가 생기면 (자바에게) 전가시킴
+Thread.sleep(1000=1초);	대기
+
+s.charAt(인덱스);	100일 경우 1(0), 0(1), 0(2)로 지정

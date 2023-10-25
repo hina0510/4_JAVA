@@ -1,0 +1,41 @@
+time : 시간 정보 불러옴
+	long t = System.currentTimeMillis();//현재시간을 초단위로
+	System.out.println(t);
+	
+	Date date = new Date();
+	System.out.println(date);//날짜 시간 정보
+	
+	SimpleDateFormat f = new SimpleDateFormat("yyyy-MM-dd일 aa hh시 mm분 ss초");
+	
+	String s = f.format(date);
+	System.out.println("date : "+s);
+
+thread.sleep : 빨간 선 위에 마우스 올리고 try / catch 누름, 대기시간 걸림(1초 = 1000)
+	long start = System.currentTimeMillis();
+	try {
+		Thread.sleep(1000);		대기시간 걸림(1000=1초)
+	} catch (InterruptedException e) {
+		e.printStackTrace();
+	}
+	long end = System.currentTimeMillis();
+	System.out.println("반갑습니다");
+	System.out.println(start);
+	System.out.println(end);
+	System.out.println("사용시간 : "+(end-start)/1000);
+
+ProcessBuilder : 프로그램 실행
+	ProcessBuilder pro = new ProcessBuilder();
+	pro.command("calc");
+	try {
+		pro.start();
+	} catch (IOException e) {
+		e.printStackTrace();
+	}
+
+
+
+
+
+
+
+

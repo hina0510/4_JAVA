@@ -1,0 +1,42 @@
+char : 문자 하나 저장, '작은 따옴표'의 값만 처리가능
+"큰 따옴표"는 문자열을 의미하기 때문에 char 과 사용X
+
+String : 문자열을 저장할 때 사용, "큰 따옴표"의 값 처리가능
+
+상수 : 변하지 않는 값, 자료형 앞에 final을 붙임
+
+Scanner : 입력받는 기능
+input.next() : 입력받은 정보 저장
+
+import java.util.Scanner;
+
+public class Ex04 {
+public static void main(String[] args) {
+	Scanner input =new Scanner(System.in);
+	int num;
+	String name;
+	System.out.print("이름 입력 : ");
+	name=input.next();
+	System.out.print("수 입력 : ");
+	num=input.nextInt();
+
+}
+}
+
++, -, *, /, %
+/ : 정수A/정수B=정수(몫)	A, B 중 하나라도 실수가 있으면 결과가 실수
+% : 나머지
+
+제어문 : if, else, for, while 등
+
+
+
+
+
+
+
+    
+
+
+
+
